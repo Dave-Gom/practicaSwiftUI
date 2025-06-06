@@ -1,5 +1,11 @@
-import CoreGraphics
+/*
+See the LICENSE.txt file for this sample’s licensing information.
 
+Abstract:
+Size, position, and other information used to draw a badge.
+*/
+
+import CoreGraphics
 
 struct HexagonParameters {
     struct Segment {
@@ -8,10 +14,7 @@ struct HexagonParameters {
         let control: CGPoint
     }
 
-
     static let adjustment: CGFloat = 0.085
-
-
     static let segments = [
         Segment(
             line:    CGPoint(x: 0.60, y: 0.05),
