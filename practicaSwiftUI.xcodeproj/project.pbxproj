@@ -6,37 +6,86 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		132C82102DF714B6007A626A /* WatchLandmarks Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 132C82032DF714B5007A626A /* WatchLandmarks Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		137D635E2DEF5EB100DE676E /* PBXContainerItemProxy */ = {
+		132C820E2DF714B6007A626A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 137D63452DEF5EB000DE676E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 137D634C2DEF5EB000DE676E;
-			remoteInfo = practicaSwiftUI;
-		};
-		137D63682DEF5EB100DE676E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 137D63452DEF5EB000DE676E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 137D634C2DEF5EB000DE676E;
-			remoteInfo = practicaSwiftUI;
+			remoteGlobalIDString = 132C82022DF714B5007A626A;
+			remoteInfo = "WatchLandmarks Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		132C82112DF714B6007A626A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				132C82102DF714B6007A626A /* WatchLandmarks Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		132C82032DF714B5007A626A /* WatchLandmarks Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchLandmarks Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		137D634D2DEF5EB000DE676E /* practicaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		137D635D2DEF5EB100DE676E /* practicaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practicaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		137D63672DEF5EB100DE676E /* practicaSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practicaSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		132C82212DF71615007A626A /* Exceptions for "practicaSwiftUI" folder in "WatchLandmarks Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				practicaSwiftUIApp.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				Views/Helpers/CircleView.swift,
+				Views/Helpers/MapView.swift,
+				Views/Landmarks/LandmarkRow.swift,
+				Views/Landmarks/LandmarksList.swift,
+			);
+			target = 132C82022DF714B5007A626A /* WatchLandmarks Watch App */;
+		};
+		132C82282DF71D5C007A626A /* Exceptions for "practicaSwiftUITests" folder in "WatchLandmarks Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 132C82022DF714B5007A626A /* WatchLandmarks Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		132C82042DF714B5007A626A /* WatchLandmarks Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchLandmarks Watch App";
+			sourceTree = "<group>";
+		};
 		137D634F2DEF5EB000DE676E /* practicaSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				132C82212DF71615007A626A /* Exceptions for "practicaSwiftUI" folder in "WatchLandmarks Watch App" target */,
+			);
 			path = practicaSwiftUI;
 			sourceTree = "<group>";
 		};
 		137D63602DEF5EB100DE676E /* practicaSwiftUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				132C82282DF71D5C007A626A /* Exceptions for "practicaSwiftUITests" folder in "WatchLandmarks Watch App" target */,
+			);
 			path = practicaSwiftUITests;
 			sourceTree = "<group>";
 		};
@@ -48,21 +97,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		132C82002DF714B5007A626A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		137D634A2DEF5EB000DE676E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D635A2DEF5EB100DE676E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D63642DEF5EB100DE676E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,6 +120,7 @@
 				137D634F2DEF5EB000DE676E /* practicaSwiftUI */,
 				137D63602DEF5EB100DE676E /* practicaSwiftUITests */,
 				137D636A2DEF5EB100DE676E /* practicaSwiftUIUITests */,
+				132C82042DF714B5007A626A /* WatchLandmarks Watch App */,
 				137D634E2DEF5EB000DE676E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				137D634D2DEF5EB000DE676E /* practicaSwiftUI.app */,
-				137D635D2DEF5EB100DE676E /* practicaSwiftUITests.xctest */,
-				137D63672DEF5EB100DE676E /* practicaSwiftUIUITests.xctest */,
+				132C82032DF714B5007A626A /* WatchLandmarks Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +137,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		132C82022DF714B5007A626A /* WatchLandmarks Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132C82142DF714B6007A626A /* Build configuration list for PBXNativeTarget "WatchLandmarks Watch App" */;
+			buildPhases = (
+				132C81FF2DF714B5007A626A /* Sources */,
+				132C82002DF714B5007A626A /* Frameworks */,
+				132C82012DF714B5007A626A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				132C82042DF714B5007A626A /* WatchLandmarks Watch App */,
+			);
+			name = "WatchLandmarks Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchLandmarks Watch App";
+			productReference = 132C82032DF714B5007A626A /* WatchLandmarks Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		137D634C2DEF5EB000DE676E /* practicaSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 137D63712DEF5EB100DE676E /* Build configuration list for PBXNativeTarget "practicaSwiftUI" */;
@@ -102,10 +166,12 @@
 				137D63492DEF5EB000DE676E /* Sources */,
 				137D634A2DEF5EB000DE676E /* Frameworks */,
 				137D634B2DEF5EB000DE676E /* Resources */,
+				132C82112DF714B6007A626A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				132C820F2DF714B6007A626A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				137D634F2DEF5EB000DE676E /* practicaSwiftUI */,
@@ -117,52 +183,6 @@
 			productReference = 137D634D2DEF5EB000DE676E /* practicaSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		137D635C2DEF5EB100DE676E /* practicaSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 137D63742DEF5EB100DE676E /* Build configuration list for PBXNativeTarget "practicaSwiftUITests" */;
-			buildPhases = (
-				137D63592DEF5EB100DE676E /* Sources */,
-				137D635A2DEF5EB100DE676E /* Frameworks */,
-				137D635B2DEF5EB100DE676E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				137D635F2DEF5EB100DE676E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				137D63602DEF5EB100DE676E /* practicaSwiftUITests */,
-			);
-			name = practicaSwiftUITests;
-			packageProductDependencies = (
-			);
-			productName = practicaSwiftUITests;
-			productReference = 137D635D2DEF5EB100DE676E /* practicaSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		137D63662DEF5EB100DE676E /* practicaSwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 137D63772DEF5EB100DE676E /* Build configuration list for PBXNativeTarget "practicaSwiftUIUITests" */;
-			buildPhases = (
-				137D63632DEF5EB100DE676E /* Sources */,
-				137D63642DEF5EB100DE676E /* Frameworks */,
-				137D63652DEF5EB100DE676E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				137D63692DEF5EB100DE676E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				137D636A2DEF5EB100DE676E /* practicaSwiftUIUITests */,
-			);
-			name = practicaSwiftUIUITests;
-			packageProductDependencies = (
-			);
-			productName = practicaSwiftUIUITests;
-			productReference = 137D63672DEF5EB100DE676E /* practicaSwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,16 +193,11 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					132C82022DF714B5007A626A = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					137D634C2DEF5EB000DE676E = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					137D635C2DEF5EB100DE676E = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 137D634C2DEF5EB000DE676E;
-					};
-					137D63662DEF5EB100DE676E = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 137D634C2DEF5EB000DE676E;
 					};
 				};
 			};
@@ -201,28 +216,20 @@
 			projectRoot = "";
 			targets = (
 				137D634C2DEF5EB000DE676E /* practicaSwiftUI */,
-				137D635C2DEF5EB100DE676E /* practicaSwiftUITests */,
-				137D63662DEF5EB100DE676E /* practicaSwiftUIUITests */,
+				132C82022DF714B5007A626A /* WatchLandmarks Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		132C82012DF714B5007A626A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		137D634B2DEF5EB000DE676E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D635B2DEF5EB100DE676E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D63652DEF5EB100DE676E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +239,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		132C81FF2DF714B5007A626A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		137D63492DEF5EB000DE676E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D63592DEF5EB100DE676E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		137D63632DEF5EB100DE676E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,19 +256,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		137D635F2DEF5EB100DE676E /* PBXTargetDependency */ = {
+		132C820F2DF714B6007A626A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 137D634C2DEF5EB000DE676E /* practicaSwiftUI */;
-			targetProxy = 137D635E2DEF5EB100DE676E /* PBXContainerItemProxy */;
-		};
-		137D63692DEF5EB100DE676E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 137D634C2DEF5EB000DE676E /* practicaSwiftUI */;
-			targetProxy = 137D63682DEF5EB100DE676E /* PBXContainerItemProxy */;
+			target = 132C82022DF714B5007A626A /* WatchLandmarks Watch App */;
+			targetProxy = 132C820E2DF714B6007A626A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		132C82122DF714B6007A626A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchLandmarks Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchLandmarks;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.practica.swiftui.practicaSwiftUI;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		132C82132DF714B6007A626A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchLandmarks Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchLandmarks;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.practica.swiftui.practicaSwiftUI;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 		137D636F2DEF5EB100DE676E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,77 +503,18 @@
 			};
 			name = Release;
 		};
-		137D63752DEF5EB100DE676E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practicaSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/practicaSwiftUI";
-			};
-			name = Debug;
-		};
-		137D63762DEF5EB100DE676E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practicaSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/practicaSwiftUI";
-			};
-			name = Release;
-		};
-		137D63782DEF5EB100DE676E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = practicaSwiftUI;
-			};
-			name = Debug;
-		};
-		137D63792DEF5EB100DE676E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.swiftui.practicaSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = practicaSwiftUI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		132C82142DF714B6007A626A /* Build configuration list for PBXNativeTarget "WatchLandmarks Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132C82122DF714B6007A626A /* Debug */,
+				132C82132DF714B6007A626A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		137D63482DEF5EB000DE676E /* Build configuration list for PBXProject "practicaSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -529,24 +529,6 @@
 			buildConfigurations = (
 				137D63722DEF5EB100DE676E /* Debug */,
 				137D63732DEF5EB100DE676E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		137D63742DEF5EB100DE676E /* Build configuration list for PBXNativeTarget "practicaSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				137D63752DEF5EB100DE676E /* Debug */,
-				137D63762DEF5EB100DE676E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		137D63772DEF5EB100DE676E /* Build configuration list for PBXNativeTarget "practicaSwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				137D63782DEF5EB100DE676E /* Debug */,
-				137D63792DEF5EB100DE676E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     @State private var selection: Tab = .featured
@@ -29,6 +30,11 @@ struct ContentView: View {
                 }
                 .tag(Tab.list)
             
+        }
+        .task {
+            let center = UNUserNotificationCenter.current()
+            
+            _ = try? await center.requestAuthorization(options: [.alert, .badge, .sound])
         }
     }
 }
